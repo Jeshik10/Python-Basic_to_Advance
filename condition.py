@@ -70,6 +70,6 @@ elif no_of_day == 7:
   print("Day is Saturday")
 else:
   print("Invalid Option!")  
-    
+  
 
 

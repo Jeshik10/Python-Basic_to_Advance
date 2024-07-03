@@ -6,7 +6,7 @@ import random
 random_number = random.randint(1,1000)
 print(random_number) '''
 
-# RNDOM NUMBER GUESS Game
+# RANDOM NUMBER GUESS Game
 '''
 import random
 

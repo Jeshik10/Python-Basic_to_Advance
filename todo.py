@@ -21,7 +21,7 @@ for todo in todos:
 fruits = []
 
 total_fruit = int(input("Enter total number of fruits: "))
-
+##  ASK
 for i in range(1,total_fruit+1):
   todo = input(f"Enter fruit {i}: ")
   fruits.append(todo)

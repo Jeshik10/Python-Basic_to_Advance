@@ -1,19 +1,30 @@
 ## Write a python program to create a class Laptop with properties [id, name, ram] and create 3 objects of it and print all details.
 
+
+## Using user inputs
 class Laptop:
   def __init__(self, id, name , ram):
     self.id = id
     self.name = name 
     self.ram = ram
 
-  def display(self):
-    print(f"Id : {self.id}\t Name : {self.name}\t RAM : {self.ram}")  
+  def display_details(self):
+    print(f"laptop Id : {self.id} \t Name : {self.name} \t RAM : {self.ram} GB")  
 
-## objects
-obj1 = Laptop('1', "Mac M1 chip", '512 gb')    
-obj2 = Laptop('2', "Lenovo", '256 gb')    
-obj3 = Laptop('2', "Vivo", '256 gb')    
+## Function to get input for a single laptop
+def get_laptop_input(laptop_number):
+  print(f"\nEnter details for laptop {laptop_number}")
+  id = int(input("Enter Laptop ID: "))
+  name = input("Enter Laptop Name: ")
+  ram =  input("Enter RAM (in GB): ")
+  return Laptop(id , name, ram)
 
-obj1.display()
-obj2.display()
-obj3.display()
+# Create 3 Laptop objects using user input
+laptops = []
+for i in range(2):
+  laptops.append(get_laptop_input(i+1))
+
+# Print details of all laptops
+print("Laptop details: ")
+for laptop in laptops:
+  laptop.display_details()

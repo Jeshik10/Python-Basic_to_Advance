@@ -27,3 +27,5 @@ number = input("Enter a number: ")
 rounded = math.floor(float(number))
 print(f"Rounded number is: {rounded}")
 #3,11 = 3
+
+## Practice more

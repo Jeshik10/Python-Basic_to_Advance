@@ -28,10 +28,3 @@ label.pack(pady=5)
 
 # Run
 root.mainloop()
-
-# Create a program that calculate ROI in % 
-# eg invest = 10000
-# return = 100000
-
-# profit = income - investment
-# ROI = profit / investment * 100

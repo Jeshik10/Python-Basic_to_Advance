@@ -16,7 +16,7 @@ def return_on_investment():
 
   label.config(text=f"The total Return On Investment (in %) is: {total_roi}")
 
-
+ 
 root = tk.Tk()
 root.title("Simple Interest")
 root.geometry("300x200")
